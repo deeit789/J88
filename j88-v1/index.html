@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>J88.com</title>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script type='text/javascript'>
+        window.ladi_viewport = function () {
+            var width = window.outerWidth > 0 ? window.outerWidth : window.screen.width;
+            var widthDevice = width;
+            var is_desktop = width >= 768;
+            var content = "";
+            if (typeof window.ladi_is_desktop == "undefined" || window.ladi_is_desktop == undefined) {
+                window.ladi_is_desktop = is_desktop;
+            }
+            if (!is_desktop) {
+                window.location = './m'
+            }
+        };
+        window.ladi_viewport();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-header">
+            <div class="logo">
+                <a href="">
+                    <img src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-wrap">
+                <ol class="menu-item">
+                    <li>
+                        <a href="#" class="livechat">
+                            <ion-icon name="logo-wechat"></ion-icon>HỖ TRỢ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" target="_contact">
+                            <ion-icon name="call"></ion-icon>Liên hệ
+                        </a>
+                    </li>
+                    <li>
+                        <div class="lang">
+                            <div class="drop-lang"> <img src="./images/vi.png" alt=""> Tiếng Việt <ion-icon
+                                    name="chevron-down-outline"></ion-icon>
+                            </div>
+                            <div class="dropdown-content" id="selectLanguage">
+                                <a href="#" id="lang-vi"> <img src="./images/vi.png" alt=""> Tiếng Việt
+                                </a>
+                                <a href="#" id="lang-en"> <img src="./images/en.png" alt=""> Tiếng Anh
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+                <form id="loginSubmit" method="post" action="">
+                    <ul class="login-wrap">
+                        <li>
+                            <div class="login-input-container">
+                                <input type="text" placeholder="Tài khoản" data-val="true"
+                                    data-val-required="The Username field is required." id="Username" name="Username"
+                                    value="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="login-input-container">
+                                <input type="password" placeholder="Mật khẩu" data-val="true"
+                                    data-val-required="The Password field is required." id="Password" name="Password">
+                                <a href="" class="btn-forgot">Quên mật khẩu?</a>
+                            </div>
+                        </li>
+                        <li><button type="button" class="btn-secondary">Đăng nhập</button></li>
+                        <li>
+                            <button type="button" class="btn-red">
+                                Tham gia ngay
+                            </button>
+                        </li>
+                    </ul>
+                    <input name="__RequestVerificationToken" type="hidden"
+                        value="CfDJ8JqhPystTRRMknfpKqE8D6o8AVo6NnzEN7SIfU2XJAYlfOv4OiqGE8R8WSInwlgdio38L8zuCmRsyy64KoRvwL8O9XuZjM76iwzzJiO0xXc8AXS0h8AloB9PF__87bA1UFjnpt3KBrw2iWS73qFpz5Y">
+                </form>
+            </div>
+        </div>
+    </div>
+    <nav class="menu-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./images/home.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/cell-phone.png" alt="">
+                    </a>
+                </li>
+                <li class="sport">
+                    <a href="">Thể thao</a>
+
+                    <div class="sub-menu-bar">.
+
+                        <div class="container box">
+                            <ul class="game-nav  pagLeft">
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/refurn_1.png" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="game-nav">
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/game_1.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">J88 Thể Thao</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/game_2.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">J88 Thể Thao Điện Tử</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/game_3.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">J88 Thể Thao Ảo</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/game_4.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">IM Thể Thao Điện Tử</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="casino">
+                    <a href="">Sòng bạc</a>
+
+                    <div class="sub-menu-bar">
+                        <div class="container box">
+                            <ul class="game-nav  pagLeft">
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/refurn_casino.png" alt="">
+                                    </span>
+                                </li>
+                            </ul>
+                            <ul class="game-nav container-casino">
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_1.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">AE CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_2.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">AE CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_3.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">AG CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_4.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">GP CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_5.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">HG CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_6.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">WM CASINO</p>
+                                </li>
+
+                                <!-- ---------------- -->
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_7.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">AE CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_8.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">AE CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_9.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">AG CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_10.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">GP CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_11.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">HG CASINO</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        <img class="img-responsive" src="./images/casino_12.png" alt="">
+                                    </span>
+                                    <p class="text-game-menu">WM CASINO</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="game">
+                    <a href="">Trò Chơi</a>
+                </li>
+                <li class="fishing">
+                    <a href="">Bắn cá </a>
+                </li>
+                <li class="keno">
+                    <a href="">Sổ xố </a>
+                </li>
+                <li class="poker">
+                    <a href="">poker </a>
+                </li>
+                <li class="3dgame">
+                    <a href="">3d game</a>
+                </li>
+                <li class="promotion">
+                    <a href="">Ưu đãi</a>
+                </li>
+                <li class="refer">
+                    <a href="">Giới thiệu</a>
+                </li>
+                <li class="vip">
+                    <a href="">VIP</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="top-banner">
+        <div class="list-banner">
+            <div class="item-banner">
+                <img src="./images/banner_1.jpg" alt="">
+            </div>
+            <div class="item-banner">
+                <img src="./images/banner_2.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 box-sport">
+                    <div class="header-content">
+                        <div class="title">
+                            <h3>Thể thao</h3>
+                            <button class="btn-bet">Cược ngay</button>
+                        </div>
+                    </div>
+                    <div class="sport-content">
+                        <div class="list-sport">
+                            <div class="item-sport">
+                                <div class="img-sport">
+                                    <img src="./images/sport-d-1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="item-sport">
+                                <div class="img-sport">
+                                    <img src="./images/sport-d-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 box-schedule-next">
+                    <div class="header-content">
+                        <div class="title">
+                            <h3>Trận sắp tới</h3>
+                            <button class="btn-bet">Cược ngay</button>
+                        </div>
+                    </div>
+                    <div class="schedule-next-content">
+                        <div class="list-schedule-next">
+
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="item-schedule-next">
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn1.png" alt="">
+                                </div>
+                                <div class="content">
+                                    <h4>WORLD CUP 2022</h4>
+                                    <p>05/06/2022 17:00 CMT +8</p>
+                                </div>
+                                <div class="img-schedule-next">
+                                    <img src="./images/lsn2.png" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 box-fishing">
+                    <div class="header-content">
+                        <div class="title">
+                            <h3>Bắn cá</h3>
+                            <button class="btn-bet">Cược ngay</button>
+                        </div>
+                    </div>
+                    <div class="list-fishing">
+                        <div class="item-fishing">
+                            <div class="img-fishing">
+                                <img src="./images/st1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="item-fishing">
+                            <div class="img-fishing">
+                                <img src="./images/st2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 box-hot-game">
+                    <div class="header-content">
+                        <div class="title">
+                            <h3>Hot game</h3>
+                            <button class="btn-bet">Xem tất cả</button>
+                        </div>
+                    </div>
+
+                    <div class="list-hot-game">
+                        <div class="item-hot-game">
+                            <div class="img-hot-game">
+                                <img src="./images/hot-game-1.png" alt="">
+                            </div>
+                            <div class="title-hot-game">
+                                <h5>Thai Pok Deng</h5>
+                                <p>CQ9</p>
+                            </div>
+                        </div>
+                        <div class="item-hot-game">
+                            <div class="img-hot-game">
+                                <img src="./images/hot-game-2.png" alt="">
+                            </div>
+                            <div class="title-hot-game">
+                                <h5>Might of Ra</h5>
+                                <p>PragmaticPlay</p>
+                            </div>
+                        </div>
+                        <div class="item-hot-game">
+                            <div class="img-hot-game">
+                                <img src="./images/hot-game-3.png" alt="">
+                            </div>
+                            <div class="title-hot-game">
+                                <h5>SONGKRAN</h5>
+                                <p>AE Gaming</p>
+                            </div>
+                        </div>
+                        <div class="item-hot-game">
+                            <div class="img-hot-game">
+                                <img src="./images/hot-game-4.png" alt="">
+                            </div>
+                            <div class="title-hot-game">
+                                <h5>Anaconda Uncoiled</h5>
+                                <p>Anaconda Uncoiled</p>
+                            </div>
+                        </div>
+                        <div class="item-hot-game">
+                            <div class="img-hot-game">
+                                <img src="./images/hot-game-5.png" alt="">
+                            </div>
+                            <div class="title-hot-game">
+                                <h5>Jelly Mania XtraStreak</h5>
+                                <p>Toptrend Gaming</p>
+                            </div>
+                        </div>
+                        <div class="item-hot-game">
+                            <div class="img-hot-game">
+                                <img src="./images/hot-game-6.png" alt="">
+                            </div>
+                            <div class="title-hot-game">
+                                <h5>K.O. Island</h5>
+                                <p>CQ9</p>
+                            </div>
+                        </div>
+                        <div class="item-hot-game">
+                            <div class="img-hot-game">
+                                <img src="./images/hot-game-7.png" alt="">
+                            </div>
+                            <div class="title-hot-game">
+                                <h5>Fishin' Bonanza</h5>
+                                <p>Playtech</p>
+                            </div>
+                        </div>
+                        <div class="item-hot-game">
+                            <div class="img-hot-game">
+                                <img src="./images/hot-game-8.png" alt="">
+                            </div>
+                            <div class="title-hot-game">
+                                <h5>Bull Fiesta</h5>
+                                <p>CQ9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 box-news">
+                    <div class="header-content">
+                        <div class="title">
+                            <h3>Tin tức</h3>
+                        </div>
+                    </div>
+                    <div class="list-news">
+                        <div class="item-news">
+                            <div class="img-thumb-news">
+                                <img src="./images/news1.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h5>MU chật vật đua vé Cúp C1, đội cũ của Rangnick thừa cơ "cuỗm" Ten Hag</h5>
+                                <h6>Sun, 10 Apr 2022 13:17:30 GMT</h6>
+                            </div>
+                        </div>
+                        <div class="item-news">
+                            <div class="img-thumb-news">
+                                <img src="./images/news1.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h5>MU chật vật đua vé Cúp C1, đội cũ của Rangnick thừa cơ "cuỗm" Ten Hag</h5>
+                                <h6>Sun, 10 Apr 2022 13:17:30 GMT</h6>
+                            </div>
+                        </div>
+                        <div class="item-news">
+                            <div class="img-thumb-news">
+                                <img src="./images/news1.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h5>MU chật vật đua vé Cúp C1, đội cũ của Rangnick thừa cơ "cuỗm" Ten Hag</h5>
+                                <h6>Sun, 10 Apr 2022 13:17:30 GMT</h6>
+                            </div>
+                        </div>
+                        <div class="item-news">
+                            <div class="img-thumb-news">
+                                <img src="./images/news1.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h5>MU chật vật đua vé Cúp C1, đội cũ của Rangnick thừa cơ "cuỗm" Ten Hag</h5>
+                                <h6>Sun, 10 Apr 2022 13:17:30 GMT</h6>
+                            </div>
+                        </div>
+                        <div class="item-news">
+                            <div class="img-thumb-news">
+                                <img src="./images/news1.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h5>MU chật vật đua vé Cúp C1, đội cũ của Rangnick thừa cơ "cuỗm" Ten Hag</h5>
+                                <h6>Sun, 10 Apr 2022 13:17:30 GMT</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 box-agent">
+                    <div class="header-content">
+                        <div class="title">
+                            <h3>Hợp tác đại lý</h3>
+                        </div>
+                    </div>
+                    <div class="box-agent-content">
+                        <div class="box-agent-left">
+                            <div class="list-agent-left">
+                                <div class="item-agent-left">
+                                    <a href="" target="_blank">
+                                        <img src="./images/daily1.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-agent-left">
+                                    <a href="" target=" _blank">
+                                        <img src="./images/daily2.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="item-agent-left">
+                                    <a href="" target=" _blank">
+                                        <img src="./images/daily3.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-agent-right">
+                            <div class="list-agent-right">
+                                <div class="item-agent-right">
+                                    <p>60% HOA HỒNG MỖI THÁNG</p>
+                                </div>
+                                <div class="item-agent-right">
+                                    <p>THAM GIA DỄ DÀNG MIỄN PHÍ</p>
+                                </div>
+                                <div class="item-agent-right">
+                                    <p>DOANH THU RÕ RÀNG MINH BẠCH</p>
+                                </div>
+                                <div class="item-agent-right">
+                                    <p>HỖ TRỢ 24/7</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-content">
+                        <div class="title">
+                            <h3>TẢI APP</h3>
+                        </div>
+                    </div>
+                    <div class="dowload-app-contain">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-footer">
+        <div class="container">
+            <div class="section-footer-1">
+                <div class="logo-footer"><img src="./images/logo.png" alt=""></div>
+                <ul>
+                    <li>Thông tin về chúng tôi</li>
+                    <li>Trung tâm thông tin</li>
+                    <li>Liên hệ</li>
+                    <li>Giấy phép</li>
+                    <li>Điều khoản điều kiện</li>
+                </ul>
+            </div>
+
+            <div class="section-footer-2">
+                <div class="col-md-3 box-section-footer-2">
+                    <div class="img-footer-agent">
+                        <img src="./images/no-handshake.png" alt="">
+                    </div>
+                    <h2>Đại lý J88.com</h2>
+                    <p>Tham gia chương trình Đại lý miễn phí và bắt đầu nhận hoa hồng.</p>
+                    <p class="see-info">Xem thông tin</p>
+                </div>
+                <div class="col-md-3 box-section-footer-2">
+                    <div class="img-footer-agent">
+                        <img src="./images/affiliate.png" alt="">
+
+                    </div>
+                    <h2>Giới thiệu</h2>
+                    <p>Giới thiệu bạn bè và nhận ngay phần thưởng.</p>
+                    <p class="see-info">Xem thông tin</p>
+                </div>
+                <div class="col-md-3 box-section-footer-2">
+                    <div class="img-footer-agent">
+                        <img src="./images/vip.png" alt="">
+
+                    </div>
+                    <h2>VIP</h2>
+                    <p>Nâng cấp VIP để hưởng quyền lợi độc quyền và nhận phần thưởng..</p>
+                    <p class="see-info">Xem thông tin</p>
+                </div>
+                <div class="col-md-3 box-section-footer-2">
+                    <div class="img-footer-agent">
+                        <img src="./images/contact.png" alt="">
+
+                    </div>
+                    <h2>Liên hệ</h2>
+                    <p>Dịch vụ hỗ trợ khách hàng luôn luôn sẵng sàng phục vụ bạn</p>
+                    <p class="see-info">Xem thông tin</p>
+                </div>
+
+            </div>
+
+            <div class="section-footer-3">
+                <div class="col-md-3 box-social-media">
+                    <div class="title1">
+                        MẠNG XÃ HỘI
+                    </div>
+                    <ul>
+                        <li>
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-tiktok"></ion-icon>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-youtube"></ion-icon>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 box-bank">
+                    <div class="title1">
+                        Phương thức thanh toán
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="img-bank">
+                                <img src="./images/tt1.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-bank">
+                                <img src="./images/tt2.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-bank">
+                                <img src="./images/tt3.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-bank">
+                                <img src="./images/tt4.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 box-responsibility">
+                    <div class="title1">
+                        Trách nhiệm
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="img-bank">
+                                <img src="./images/tn1.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-bank">
+                                <img src="./images/tn2.png" alt="">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="img-bank">
+                                <img src="./images/tn3.png" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-footer-4">
+                <div class="col-md-12">
+                    <div class="title1">
+                        ĐỐI TÁC
+                    </div>
+                    <div class="box-partner">
+                        <div class="dt1"></div>
+                        <div class="dt2"></div>
+                        <div class="dt3"></div>
+                        <div class="dt4"></div>
+                        <div class="dt5"></div>
+                        <div class="dt7"></div>
+                        <div class="dt8"></div>
+                        <div class="dt9"></div>
+                        <div class="dt10"></div>
+                        <div class="dt11"></div>
+                        <div class="dt12"></div>
+                        <div class="dt13"></div>
+                        <div class="dt14"></div>
+                        <div class="dt15"></div>
+                        <div class="dt16"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="nav-dowload-app">
+            <div class="box-download-app">
+                <h6>Vuốt để cược</h6>
+                <p>Nhanh hơn đơn giản hơn</p>
+
+                <div class="box-ios">
+                    <ion-icon name="logo-apple"></ion-icon>
+                    <p>iOS</p>
+                </div>
+
+                <div class="box-android">
+                    <ion-icon name="logo-android"></ion-icon>
+                    <p>Android</p>
+                </div>
+            </div>
+            <div class="btn-dowload-app"></div>
+        </div>
+
+        <div class="nav-support">
+            <div class="btn-support"></div>
+
+            <div class="box-support">
+                <div class="img-sp">
+                    <img src="./images/24hour7.png" alt="">
+                </div>
+                <button class="btn-chat">Chat ngay</button>
+
+                <div class="in-out-monney">
+                    <div class="box-in">
+                        <div class="img-monney">
+                            <img src="./images/nap.png" alt="">
+                        </div>
+                        <p>Nạp tiền</p>
+                    </div>
+                    <div class="box-out">
+                        <div class="img-monney">
+                            <img src="./images/rut.png" alt="">
+                        </div>
+                        <p>Rút tiền</p>
+                    </div>
+                </div>
+
+                <div class="button-contact">
+                    <div class="img-contact">
+                        <img src="./images/cskh.png" alt="">
+                    </div>
+                    <p>Chăm sóc khách hàng</p>
+                </div>
+                <div class="button-contact">
+                    <div class="img-contact">
+                        <img src="./images/sdt.png" alt="">
+                    </div>
+                    <p>0999999999</p>
+                </div>
+                <div class="button-contact">
+                    <div class="img-contact">
+                        <img src="./images/fb.png" alt="">
+                    </div>
+                    <p>Facebook</p>
+                </div>
+                <div class="button-contact">
+                    <div class="img-contact">
+                        <img src="./images/zl.png" alt="">
+                    </div>
+                    <p>Zalo</p>
+                </div>
+                <div class="button-contact">
+                    <div class="img-contact">
+                        <img src="./images/tl.png" alt="">
+                    </div>
+                    <p>Telegram</p>
+                </div>
+                <div class="button-contact">
+                    <div class="img-contact">
+                        <img src="./images/gm.png" alt="">
+                    </div>
+                    <p>Gmail</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="./js/app.js"></script>
+
+</body>
+
+</html>
