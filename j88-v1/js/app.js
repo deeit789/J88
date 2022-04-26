@@ -108,3 +108,26 @@ $('.list-agent-right').slick({
     arrows: false,
 });
 
+$.ajax({
+    type: "GET",
+    dataType: "json",
+    url: "https://soikeo.tv/wp-json/wp/v2/posts?categories=332&_embed",
+    success: function (data) {
+        console.log(data);
+
+        $('.list-news').html('');
+        for (var i = 0; i < data.length; i++) {
+
+            var datetime = moment(data[i].date).format('lll');
+
+            var embeded = data[i]._embedded;
+            $('.list-news').append(`<a href="${data[i].link}" target="_blank"><div class="item-news"><div class="img-thumb-news"><img src="${embeded['wp:featuredmedia'][0].source_url}" alt=""></div><div class="content"><h5>${data[i].title.rendered}</h5><h6>${datetime}</h6></div></div></a>`)
+        }
+    },
+    error: function (error) {
+
+        jsonValue = jQuery.parseJSON(error.responseText);
+        alert("error" + error.responseText);
+    }
+});
+

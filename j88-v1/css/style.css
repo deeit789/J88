@@ -26,7 +26,13 @@ ion-icon {
     flex-direction: row;
     font-size: 1.3rem;
     font-weight: 400;
-    padding: 1rem 0 1.5rem 0;
+    padding: .5rem 0;
+}
+
+.top-header .header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .top-header .header-wrap .menu-item {
@@ -51,16 +57,21 @@ ion-icon {
 }
 
 .top-header .logo img {
-    width: 120px
+    width: 190px
 }
 
 /* slect language */
+
+.lang {
+    margin-left: 1rem;
+}
 
 .drop-lang {
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
+    font-size: 1.4rem;
 }
 
 .drop-lang ion-icon {
@@ -97,7 +108,8 @@ ion-icon {
     color: black;
     padding: 12px;
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .dropdown a:hover {
@@ -388,6 +400,10 @@ body>nav>div>ul>li>a>img {
     background: #0daddf;
 }
 
+.list-agent-left .slick-slide img {
+    height: 250px;
+}
+
 .img-home {
     width: 35px;
 }
@@ -531,22 +547,30 @@ body>nav>div>ul>li>a>img {
     background: #0daddf;
 }
 
+.list-fishing .slick-slide img {
+    height: 377px;
+}
+
 
 .list-hot-game {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    gap: 10px;
 }
 
 .item-hot-game {
-    padding: 0 1rem;
+    padding: 0 0 0 2rem;
     cursor: pointer;
+}
+
+.item-hot-game:nth-child(n + 5) {
+    margin-top: 2rem;
 }
 
 .img-hot-game {
     height: 150px;
     padding-bottom: 0%;
-    background-color: #F0F0F0;
+    background-color: #efefef;
+
 }
 
 .img-hot-game img {
@@ -598,6 +622,10 @@ body>nav>div>ul>li>a>img {
     padding-right: 1rem;
 }
 
+.list-news a {
+    width: 100%;
+}
+
 /* width */
 .list-news::-webkit-scrollbar {
     width: 5px;
@@ -624,7 +652,13 @@ body>nav>div>ul>li>a>img {
     display: flex;
     align-items: flex-start;
     padding: 1rem 0;
-    border-bottom: 1px solid #545454
+    border-bottom: 1px solid #545454;
+    width: 100%;
+}
+
+.item-news a {
+    display: block;
+    width: 100%;
 }
 
 .item-news:not(:first-child) {}
@@ -636,6 +670,7 @@ body>nav>div>ul>li>a>img {
 .item-news .content h5 {
     color: #000;
     font-size: 1.6rem;
+    line-height: 2.2rem;
     font-weight: 500;
     letter-spacing: 1px;
 }
@@ -648,7 +683,15 @@ body>nav>div>ul>li>a>img {
 }
 
 .img-thumb-news {
-    width: 200px;
+    width: 150px;
+    height: 102px;
+}
+
+.img-thumb-news img {
+    object-fit: cover;
+    width: auto;
+    width: 150px;
+    height: 102px;
 }
 
 
@@ -698,7 +741,7 @@ body>nav>div>ul>li>a>img {
 
 
 .item-agent-right {
-    padding: 2.7rem 1rem;
+    padding: 3.06rem 1rem;
     font-size: 1.5rem;
 }
 
@@ -739,17 +782,17 @@ body>nav>div>ul>li>a>img {
 }
 
 .section-footer-1 .logo-footer {
-    width: 100px;
+    width: 180px;
     padding-right: 2rem;
 }
 
 .section-footer {
-    padding: 5rem 0;
+    padding: 5rem 0 3rem 0;
 }
 
 .section-footer-1 {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .section-footer-1 ul {
@@ -769,7 +812,7 @@ body>nav>div>ul>li>a>img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 4rem;
+    margin-top: 2rem;
     padding-top: 3rem;
     border-top: 1px solid #afafaf;
 }
@@ -811,6 +854,7 @@ body>nav>div>ul>li>a>img {
     padding-top: 3rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-top: 1px solid #afafaf;
 
 }
@@ -1119,6 +1163,229 @@ body>nav>div>ul>li>a>img {
 .img-monney {
     width: 50px;
     margin: 0 auto;
-
     cursor: pointer;
+}
+
+.img-bank {
+    height: 50px;
+}
+
+.footer-logo-wrap .footer-logo-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #494949;
+    padding: 1rem 0;
+    text-align: center;
+
+}
+
+.copy {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #494949;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-logo-box>div {
+    background: url(https://gic.x8gdkt99.com/img/static/desktop/footer-logos.png) no-repeat;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footer-logo-box>.AE_GAMING {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/egame/ae_gaming.png) 50%/100% no-repeat;
+    width: 106px;
+}
+
+.footer-logo-box>.AE_LOT {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/lottery/ae_lot.png) 50%/100% auto no-repeat;
+    width: 150px;
+}
+
+.footer-logo-box>div {
+    background: url(https://gic.x8gdkt99.com/img/static/desktop/footer-logos.png) no-repeat;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footer-logo-box>div {
+    background: url(https://gic.x8gdkt99.com/img/static/desktop/footer-logos.png) no-repeat;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footer-logo-box>div {
+    background: url(https://gic.x8gdkt99.com/img/static/desktop/footer-logos.png) no-repeat;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footer-logo-box>div {
+    background: url(https://gic.x8gdkt99.com/img/static/desktop/footer-logos.png) no-repeat;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.footer-logo-box>.bbin,
+.footer-logo-box>.BBIN {
+    background-position: -2396px 0;
+    width: 64px;
+}
+
+.footer-logo-box>.BTI {
+    background: url(https://gic.x8gdkt99.com/img/static/ec-app/BTI.png) 50%/100% auto no-repeat;
+    width: 85px;
+}
+
+.footer-logo-box>.CMDBET {
+    background: url(https://gic.x8gdkt99.com/img/static/game/zh-CN/CMDBET/CMDBET.png) 50%/100% auto no-repeat;
+    width: 68px;
+}
+
+.footer-logo-box>.CQ9 {
+    background-position: -528px 0;
+    width: 68px;
+}
+
+.footer-logo-box>.DG {
+    background: url(https://gic.x8gdkt99.com/img/static/game/zh-CN/DG/dg.png) 50%/90% auto no-repeat;
+    width: 70px;
+}
+
+.footer-logo-box>.EVO {
+    background: url(https://gic.x8gdkt99.com/img/static/game/zh-CN/EVO/evo.png) 50%/contain no-repeat;
+    width: 55px;
+}
+
+.footer-logo-box>.FC {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/egame/fc.png) 50%/100% auto no-repeat;
+    width: 48px;
+}
+
+.footer-logo-box>.GPI {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/lottery/gpi.png) 50%/100% auto no-repeat;
+    width: 125px;
+}
+
+.footer-logo-box>.GW {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/lottery/gw.png) 50%/100% auto no-repeat;
+    width: 70px;
+}
+
+.footer-logo-box>.JDB {
+    background-position: -2653px 0;
+    width: 83px;
+}
+
+.footer-logo-box>.JILI {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/egame/jili.png) 50%/100% auto no-repeat;
+    width: 70px;
+}
+
+.footer-logo-box>.KINGMAKER {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/chess/kingmaker.png) 50%/100% auto no-repeat;
+    width: 120px;
+}
+
+.footer-logo-box>.LC {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/chess/lc.png) 50%/100% auto no-repeat;
+    width: 75px;
+}
+
+.footer-logo-box>.MG,
+.footer-logo-box>.Micro {
+    background-position: -1320px 0;
+    width: 105px;
+}
+
+.footer-logo-box>.PG {
+    background-position: -3440px 0;
+    width: 60px;
+}
+
+.footer-logo-box>.PP {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/egame/pp.png) 50%/100% auto no-repeat;
+    width: 57px;
+}
+
+.footer-logo-box>.play-tech,
+.footer-logo-box>.PT {
+    background-position: -2480px 0;
+    width: 83px;
+}
+
+.footer-logo-box>.RICH88 {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/egame/rich88.png) 50%/100% auto no-repeat;
+    width: 110px;
+}
+
+.footer-logo-box>.RED-TIGER,
+.footer-logo-box>.RT {
+    background-position: -1498px 0;
+    width: 45px;
+}
+
+.footer-logo-box>.SA {
+    background-position: -1563px 0;
+    width: 91px;
+}
+
+.footer-logo-box>.SABA,
+.footer-logo-box>.SABA-SPORTS {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/sports/saba.png) 50%/100% auto no-repeat;
+    width: 130px;
+}
+
+.footer-logo-box>.SBOBET {
+    background: url(https://gic.x8gdkt99.com/img/static/game/zh-CN/SBOBET/SBOBET.png) 50%/100% auto no-repeat;
+    width: 68px;
+}
+
+.footer-logo-box>.BACCARAT,
+.footer-logo-box>.MX,
+.footer-logo-box>.SEXYBCRT {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/live/sexybcrt.png) 50%/100% auto no-repeat;
+    width: 106px;
+}
+
+.footer-logo-box>.SIMPLEPLAY {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/egame/simpleplay.png) 50%/100% auto no-repeat;
+    width: 48px;
+}
+
+.footer-logo-box>.SV,
+.footer-logo-box>.SV388 {
+    background-position: -1833px 0;
+    width: 86px;
+}
+
+.footer-logo-box>.TF {
+    background: url(https://gic.x8gdkt99.com/img/static/gplogo/esports/tf.png) 50%/100% auto no-repeat;
+    width: 90px;
+}
+
+.footer-logo-box>.UG,
+.footer-logo-box>.UGAMING {
+    background-position: -2032px 0;
+    width: 76px;
+}
+
+.footer-logo-box>.VENUS,
+.footer-logo-box>.VGS {
+    background-position: -2128px 0;
+    width: 54px;
+}
+
+.footer-logo-box>.WM {
+    background: url(https://gic.x8gdkt99.com/img/static/game/zh-CN/WM/wm.png) 50%/90% auto no-repeat;
+    width: 60px;
 }
